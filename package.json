@@ -1,0 +1,20 @@
+{
+  "name": "message-board",
+  "version": "1.0.0",
+  "description": "Simple message board app allows users to post messages and read messages from other users",
+  "main": "app.js",
+  "scripts": {
+		"start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingcris/Message-Board.git"
+  },
+  "author": "cristian reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingcris/Message-Board/issues"
+  },
+  "homepage": "https://github.com/codingcris/Message-Board#readme"
+}
