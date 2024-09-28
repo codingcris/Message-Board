@@ -1,0 +1,39 @@
+<!-- prettier-ignore -->
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="meyerReset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+<pre>
+ _  _  ____  ____  ____   __    ___  ____ 
+( \/ )(  __)/ ___)/ ___) / _\  / __)(  __)
+/ \/ \ ) _) \___ \\___ \/    \( (_ \ ) _) 
+\_)(_/(____)(____/(____/\_/\_/ \___/(____)
+</pre>
+<pre>
+ ____   __    __   ____  ____ 
+(  _ \ /  \  / _\ (  _ \(    \
+ ) _ ((  O )/    \ )   / ) D (
+(____/ \__/ \_/\_/(__\_)(____/
+    </pre>
+      </header>
+    <ul class="messages">
+      <% messages.map(message => {%> 
+        <li class="message">
+            <p id="messageText"><%= message.text %></p> 
+            <p>USER: <%= message.user %> </p>
+            <p>DATE: <%= message.added %></p>
+            <a href="message/<%= message.id %>">[open]</a>
+        </li>
+        
+        <% }) %>
+    </ul>
+    <div class="addNewMessage"><span>>  </span><a href="/new">[ADD MESSAGE]</a></div>
+    </div>  
+  </body>
+</html>

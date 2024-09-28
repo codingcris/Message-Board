@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>New Message</h1>
+    <form method="post" action="/new">
+      <label
+        >USER: <input type="text" name="user" required maxlength="20" />
+      </label>
+      <label>
+        MESSAGE:
+        <textarea
+          name="messageTxt"
+          id="message"
+          required
+          maxlength="200"
+        ></textarea>
+      </label>
+      <div class="controls">
+        <button type="button" id="cancel" class="button">Cancel</button>
+        <button type="submit" class="button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
+<script>
+  document.getElementById("cancel").onclick = (e) => {
+    window.location.href = "/";
+  };
+</script>
